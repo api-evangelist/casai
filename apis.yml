@@ -1,7 +1,27 @@
 aid: casai
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/casai.png
 name: Casai
-description: Casai is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Casai was a technology-enabled short-term and furnished-apartment rental company operating across
+  Latin America (notably Mexico and Brazil), surfaced as a portfolio company of a16z and added to the
+  API Evangelist network as a stub for enrichment. The enrichment pass found no active developer
+  surface for this entity. The casai.com domain now hosts an unrelated luxury villa rental business
+  (Premium Holiday Rentals and Villas, curated by TravelAI), and no developer portal, API
+  documentation, OpenAPI specification, SDKs, or public API is published under the original company.
+  With no spec-bearing surface, no downstream enrichment artifacts (packages, well-known, MCP, scopes,
+  errors, conformance, etc.) could be produced without fabrication, so this profile remains an
+  identity-only lead.
 url: https://raw.githubusercontent.com/api-evangelist/casai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +29,58 @@ x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment-status: no-developer-surface
+x-enrichment-note: >-
+  casai.com domain repurposed to an unrelated luxury-villa business (curated by TravelAI); no API,
+  developer portal, or documentation found for the original a16z-backed company. Re-verified
+  2026-07-20 with direct probes rather than inherited assumption.
+x-enrichment-evidence:
+  probed: '2026-07-20'
+  dns: >-
+    Only casai.com resolves (Amazon CloudFront, 13.33.82.0/24). api., developer(s)., docs., and
+    status.casai.com return NXDOMAIN — there is no developer-surface hostname to enrich.
+  discovery_paths: >-
+    With a browser User-Agent, /.well-known/security.txt, /.well-known/openid-configuration,
+    /.well-known/oauth-authorization-server, /.well-known/api-catalog, /.well-known/ai-plugin.json,
+    /llms.txt, /openapi.json, /sitemap.xml, /api, /developers and /docs all return 404. Only
+    /robots.txt returns 200.
+  homepage: >-
+    Title "Premium Holiday Rentals and Villas | Casai" (og:site_name "Casai Villas & Holiday Homes")
+    — a villa-rate comparison site, not the original operator. Zero occurrences of "developer",
+    "openapi", "swagger" or "graphql" in the served HTML.
+  registries: >-
+    No GitHub organization "casai" (404). No PyPI project. npm matches are unrelated third parties
+    (CAS.AI ad monetization, an unrelated agent-workflow package). The one plausible original-company
+    artifact, @casai-org/react-date-range, is a vendored FORK of hypeserver/react-date-range last
+    published 2022-04 — a third-party UI component, not a first-party API client, so it is
+    deliberately NOT wired as an SDKs/Packages pointer.
+  other_hosts: >-
+    robots.txt advertises blog.casai.com (200) and cdn.casai.com (200), but both belong to the
+    successor villa-rental business, not the a16z-backed company this profile describes. No Blog
+    pointer was added, to avoid attributing an unrelated entity's property to this company.
+  rerun_gotcha: >-
+    casai.com WAFs non-browser User-Agents: a default curl UA returns a blanket 403 on every path
+    INCLUDING /robots.txt, which can be misread as "blocked" or as evidence of absence. Always
+    re-probe with a browser User-Agent before concluding — the real answer is 404, not 403.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Hospitality
+- Travel
+- Short-Term Rentals
+- Proptech
+- Latin America
+- Real Estate
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1

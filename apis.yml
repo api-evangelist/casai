@@ -62,7 +62,7 @@ x-enrichment-evidence:
     casai.com WAFs non-browser User-Agents: a default curl UA returns a blanket 403 on every path
     INCLUDING /robots.txt, which can be misread as "blocked" or as evidence of absence. Always
     re-probe with a browser User-Agent before concluding — the real answer is 404, not 403.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-20'
 tags:

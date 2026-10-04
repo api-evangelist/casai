@@ -83,7 +83,7 @@ tags:
 - Short-Term Rental
 - PropTech
 - Latin America
-- Real-Estate
+- Real Estate
 tags_raw:
 - Company
 - Hospitality
@@ -92,6 +92,7 @@ tags_raw:
 - Proptech
 - Latin America
 - Real Estate
+- Real-Estate
 apis: []
 maintainers:
 - FN: Kin Lane

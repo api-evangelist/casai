@@ -64,6 +64,28 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Casai is a company surfaced as a portfolio company of a16z and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Casai was a technology-enabled short-term and furnished-apartment rental company operating across Latin America (notably Mexico and Brazil), surfaced as a portfolio company of a16z and added to the API Evangelist network as a stub for enrichment. The enrichment pass found no active developer surface for this entity. The casai.com domain now hosts an unrelated luxury villa rental business (Premium Holiday Rentals and Villas, curated by TravelAI), and no developer portal, API documentation, OpenAPI specification, SDKs, or public API is published under the original company. With no spec-bearing surface, no downstream enrichment artifacts (packages, well-known, MCP, scopes, errors, conformance, etc.) could be produced without fabrication, so this profile remains an identity-only lead.
 
-Backed by: a16z
+**Areas:** Company · Hospitality · Travel · Short-Term Rental · PropTech · Latin America · Real Estate
+
+## Casai on APIs.io
+
+Everything profiled for Casai is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/casai/](https://apis.io/providers/casai/)** — or go straight to one of the APIs or properties below.
+
+## API Evangelist rating
+
+**Unrated** — no public website could be reached for this company, so there was almost nothing to measure and nothing a reader could check.
+
+This is not a score of zero. No rating is published for this company. If that is wrong because something public exists that we missed, say so on this repository or email [info@apievangelist.com](mailto:info@apievangelist.com) and it will be re-run — free, and no justification needed.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Casai: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/casai/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
